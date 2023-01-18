@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Яраслава Гребенщикова](https://up.htmlacademy.ru/htmlcss/36/user/2277687).
-* Наставник: [Амина Омарова](https://htmlacademy.ru/profile/ami).
+* Наставник: [Амина Омарова](https://htmlacademy.ru/profile/ami) .
 
 ---
 

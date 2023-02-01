@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/ptsans-400.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/ptsans-700.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/ptsans-400.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    font-style: italic;
+    font-weight: 700;
+    src: url('../fonts/ptsans-700.woff2') format('woff2');
+    font-display: swap;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: #f2f2f2;
+    color: #000000;
+}
+
+.basic-btn,
+.secondary-btn,
+.select-btn,
+.transparent-btn {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+}
+
+.basic-btn {
+    background-color: #756157;
+}
+
+.secondary-btn {
+    background-color: #82B3D3;
+}
+
+.select-btn {
+    background-color: #7DB54F;
+}
+
+.transparent-btn {
+    background-color: transparent;
+}
+
+.page-container {
+    background: #ffffff;
+}
+
+.main-header {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.navigation-link {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.favorite-counter {
+    font-size: 10px;
+    line-height: 10px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    background-color: #7DB54F;
+}
+
+.main-index {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.promo {
+    background-image: url(../images/index-promo-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 485px;
+    text-align: center;
+}
+
+.about-sedona {
+    background-color: inherit;
+    color: inherit;
+    text-align: center;
+}
+
+.about-sedona-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.about-sedona-description {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+}

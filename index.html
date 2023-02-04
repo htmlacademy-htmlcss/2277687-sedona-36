@@ -4,24 +4,26 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./styles/styles.css">
   </head>
 
   <body>
     <div class="page-container">
-      <header class="main-header">
+      <header class="main-header" data-test="header">
         <nav class="navigation">
+          <a class="navigation-logo" href="./index.html">
+            <img class="navigation-logo-img" width="138" height="64" alt="Логотип Седона"
+              src="./images/header-logo.svg">
+          </a>
           <ul class="navigation-list">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">На главную</span>
-            </a>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Главная</a>
+              <a class="navigation-link navigation-link-active" href="./index.html">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">О седоне</a>
+              <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Гостиницы</a>
+              <a class="navigation-link" href="./catalog.html">Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -33,12 +35,12 @@
             <span class="visually-hidden">Избранное</span>
             <span class="favorite-counter">12</span>
           </a>
-          <a class="basic-btn catalog-btn" href="/catalog.html">Хочу сюда!</a>
+          <a class="basic-btn catalog-btn" href="./catalog.html">Хочу сюда!</a>
         </div>
       </header>
 
-      <main class="main-index">
-        <section class="promo">
+      <main class="main-index" data-test="main">
+        <section class="promo" data-test="hero">
           <h1 class="visually-hidden">Седона</h1>
           <img class="promo-logo" width="458" height="352"
             alt="Welcome to the gorgeous Sedona 'Because the Grand Canyon sucks!'" src="./images/index-promo-logo.svg">
@@ -48,7 +50,7 @@
             заслуживающий большего!</h2>
           <p class="about-sedona-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </section>
-        <section class="advantages">
+        <section class="advantages" data-test="advantages">
           <ul class="advantages-list">
             <li class="advantages-item advantages-item-dark-blue">
               <h3 class="advantages-title">Настоящий городок</h3>
@@ -57,7 +59,7 @@
               </p>
             </li>
             <li class="advantages-item-img">
-              <img width="800" height="384" alt="Кафе в Седоне" src="./images/sedona-cafe.jpg">
+              <img class="advantages-img" width="800" height="384" alt="Кафе в Седоне" src="./images/sedona-cafe.jpg">
             </li>
             <li class="advantages-item advantages-item-light-blue">
               <h3 class="advantages-title">Небольшая площадь</h3>
@@ -66,7 +68,7 @@
               </p>
             </li>
             <li class="advantages-item advantages-item-blue">
-              <h3>Красивая дорога</h3>
+              <h3 class="advantages-title">Красивая дорога</h3>
               <p class="advantages-description">
                 Ехать в Седону из Лас-Вегаса совсем не скучно!
               </p>
@@ -117,24 +119,24 @@
             </li>
           </ul>
         </section>
-        <section class="about-sedona">
+        <section class="about-sedona" data-test="search">
           <h2 class="about-sedona-title">Заинтересовались?</h2>
           <p class="about-sedona-description">Укажите предполагаемые даты поездки,и мы
             покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="basic-btn about-sedona-btn">Поиск гостинницы в Седоне</a>
+          <a class="basic-btn about-sedona-btn">Поиск гостиницы в Седоне</a>
         </section>
-        <section class="subscribe">
+        <section class="subscribe" data-test="subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="subscribe-email">Email</label>
+            <label class="visually-hidden" for="subscribe-email">Email</label>
             <input class="subscribe-field" type="email" placeholder="Ваш e-mail" name="subscribe-email"
               id="subscribe-email" required>
             <button class="secondary-btn subscribe-btn" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
-      <footer class="main-footer">
+      <footer class="main-footer" data-test="footer">
         <section class="footer-social">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-social-list">
@@ -157,7 +159,7 @@
         </section>
         <section class="footer-phone">
           <h2 class="visually-hidden">Контактный телефон</h2>
-          <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="footer-phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </section>
         <section class="footer-logo">
           <h2 class="visually-hidden">Ссылка на html academy</h2>

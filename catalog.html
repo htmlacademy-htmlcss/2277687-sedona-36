@@ -4,26 +4,26 @@
   <head>
     <meta charset="utf-8">
     <title>Седона: Каталог</title>
+    <link rel="stylesheet" href="./styles/styles.css">
   </head>
 
   <body>
     <div class="page-container">
       <header class="main-header">
         <nav class="navigation">
+          <a class="navigation-logo" href="./index.html">
+            <img class="navigation-logo-img" width="138" height="64" alt="Логотип Седона"
+              src="./images/header-logo.svg">
+          </a>
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <span class="visually-hidden">На главную</span>
-              </a>
+              <a class="navigation-link" href="./index.html">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Главная</a>
+              <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">О седоне</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Гостиницы</a>
+              <a class="navigation-link navigation-link-active" href="./catalog.html">Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -35,12 +35,12 @@
             <span class="visually-hidden">Избранное</span>
             <span class="favorite-counter">12</span>
           </a>
-          <a class="basic-btn catalog-btn" href="/catalog.html">Хочу сюда!</a>
+          <a class="basic-btn catalog-btn" href="./catalog.html">Хочу сюда!</a>
         </div>
       </header>
 
       <main class="main-inner">
-        <section class="filter">
+        <section class="filter" data-test="filter">
           <header class="inner-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ol class="breadcrumbs">
@@ -61,19 +61,19 @@
               </legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <label class="catalog-filter-control">
+                  <label class="catalog-filter-control  filter-checkbox">
                     <input type="checkbox" id="pool" name="infrastructure">
                     Бассейн
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="catalog-filter-control">
+                  <label class="catalog-filter-control filter-checkbox">
                     <input type="checkbox" id="parking" name="infrastructure">
                     Парковка
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="catalog-filter-control">
+                  <label class="catalog-filter-control  filter-checkbox">
                     <input type="checkbox" id="wi-fi" name="infrastructure">
                     Wi-fi
                   </label>
@@ -86,19 +86,19 @@
               </legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <label class="catalog-filter-control">
+                  <label class="catalog-filter-control filter-radio">
                     <input type="radio" id="inn" name="housing-type">
                     Гостинница
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="catalog-filter-control">
+                  <label class="catalog-filter-control filter-radio">
                     <input type="radio" id="motel" name="housing-type">
                     Мотель
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="catalog-filter-control">
+                  <label class="catalog-filter-control filter-radio">
                     <input type="radio" id="apartments" name="housing-type">
                     Апартаменты
                   </label>
@@ -133,7 +133,7 @@
           </select>
           <ul class="sort-grid-list">
             <li class="sort-grid-item">
-              <a class="sort-grid-btn sort-grid-table">
+              <a class="sort-grid-btn sort-grid-table sort-grid-btn-active">
                 <span class="visually-hidden">Сортировка таблицей</span>
               </a>
             </li>
@@ -150,7 +150,7 @@
           </ul>
         </section>
 
-        <section class="hotels-catalog">
+        <section class="hotels-catalog" data-test="catalog">
           <ul class="hotels-catalog-item">
             <li class="hotels-catalog-item">
               <a class="hotel-link" href="#">
@@ -259,7 +259,7 @@
             </li>
           </ul>
         </div>
-        <section class="subscribe subscribe-transparent">
+        <section class="subscribe subscribe-transparent" data-test="subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -271,7 +271,7 @@
         </section>
       </main>
 
-      <footer class="main-footer">
+      <footer class="main-footer" data-test="footer">
         <section class="footer-social">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-social-list">
@@ -294,7 +294,7 @@
         </section>
         <section class="footer-phone">
           <h2 class="visually-hidden">Контактный телефон</h2>
-          <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="footer-phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </section>
         <section class="footer-logo">
           <h2 class="visually-hidden">Ссылка на html academy</h2>

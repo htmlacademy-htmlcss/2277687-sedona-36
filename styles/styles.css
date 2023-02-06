@@ -39,14 +39,12 @@ body {
     font-weight: 400;
     background-color: #f2f2f2;
     color: #000000;
+    margin: 0;
 }
 
 /*Кнопки*/
 
-.basic-btn,
-.secondary-btn,
-.select-btn,
-.transparent-btn {
+.btn {
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;

@@ -39,7 +39,7 @@
         </div>
       </header>
 
-      <main class="main-index" data-test="main">
+      <main class="main-index main-container" data-test="main">
         <section class="promo" data-test="hero">
           <h1 class="visually-hidden">Седона</h1>
           <img class="promo-logo" width="458" height="352"
@@ -80,7 +80,7 @@
               </p>
             </li>
             <li class="advantages-item-img">
-              <img width="800" height="384" alt="Мост дьявола" src="./images/devil-bridge.jpg">
+              <img class="advantages-img" width="800" height="384" alt="Мост дьявола" src="./images/devil-bridge.jpg">
             </li>
             <li class="advantages-item advantages-item-dark-blue">
               <h3 class="advantages-title">Там есть мост дьявола</h3>
@@ -137,36 +137,38 @@
         </section>
       </main>
       <footer class="main-footer" data-test="footer">
-        <section class="footer-social">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="social-link social-link-vk" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">ВКонтакте</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="social-link social-link-telegram" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Телеграм</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="social-link social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Youtube</span>
-              </a>
-            </li>
-          </ul>
-        </section>
-        <section class="footer-phone">
-          <h2 class="visually-hidden">Контактный телефон</h2>
-          <a class="footer-phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </section>
-        <section class="footer-logo">
-          <h2 class="visually-hidden">Ссылка на html academy</h2>
-          <a href="https://htmlacademy.ru/">
-            <img width="115" height="33" src="./images/html-academy-logo.svg" alt="Ссылка на html academy">
-          </a>
-        </section>
+        <div class="main-footer-container">
+          <section class="footer-social">
+            <h2 class="visually-hidden">Социальные сети</h2>
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a class="social-link social-link-vk" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">ВКонтакте</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="social-link social-link-telegram" href="https://t.me/htmlacademy">
+                  <span class="visually-hidden">Телеграм</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="social-link social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
+                  <span class="visually-hidden">Youtube</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="footer-phone">
+            <h2 class="visually-hidden">Контактный телефон</h2>
+            <a class="footer-phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          </section>
+          <section class="footer-logo">
+            <h2 class="visually-hidden">Ссылка на html academy</h2>
+            <a href="https://htmlacademy.ru/">
+              <img width="115" height="33" src="./images/html-academy-logo.svg" alt="Ссылка на html academy">
+            </a>
+          </section>
+        </div>
       </footer>
     </div>
   </body>

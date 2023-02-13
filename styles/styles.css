@@ -30,6 +30,13 @@
     font-display: swap;
 }
 
+
+
+/* * {
+    outline: #4f73b5 2px solid;
+} */
+
+
 html {
     height: 100%;
 }
@@ -66,6 +73,7 @@ body {
     text-transform: uppercase;
     color: #ffffff;
     text-decoration: none;
+    display: block;
 }
 
 .basic-btn {
@@ -84,6 +92,19 @@ body {
     background-color: transparent;
 }
 
+/*visually-hidden !!! */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /*Главный хедер*/
 
 .main-header {
@@ -91,10 +112,10 @@ body {
     color: #000000;
     display: flex;
     justify-content: space-between;
+    padding: 0 70px;
 }
 
 .navigation {
-    margin-left: 70px;
     width: 632px;
     display: flex;
 }
@@ -111,11 +132,14 @@ body {
 .navigation-list {
     margin: 0;
     padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .header-link-list {
-    margin-right: 70px;
     width: 312px;
+    display: flex;
 }
 
 .navigation-link,
@@ -127,6 +151,22 @@ body {
     color: inherit;
     text-align: center;
     background-color: #ffffff;
+    display: block;
+}
+
+.navigation-link {
+    margin: 0;
+    padding: 20px 16px;
+}
+
+.header-link-item {
+    display: block;
+    min-width: 44px;
+    min-height: 64px;
+}
+
+.header-link-item:nth-child(2) {
+    margin-right: 20px;
 }
 
 .favorite-counter {
@@ -136,6 +176,14 @@ body {
     color: #ffffff;
     text-align: center;
     background-color: #7DB54F;
+    padding: 5px;
+}
+
+.catalog-btn {
+    padding: 8px 34px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    display: inline-block;
 }
 
 /*Основной блок*/
@@ -156,6 +204,8 @@ body {
     background-image: url(../images/index-promo-background.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
+    padding-top: 51px;
+    padding-bottom: 82px;
 }
 
 .promo-logo {
@@ -168,6 +218,15 @@ body {
 .about-sedona {
     color: inherit;
     text-align: center;
+    padding: 69px 0;
+}
+
+.about-sedona-welcome {
+    padding: 64px 0;
+}
+
+.about-sedona-search {
+    padding: 96px 304px;
 }
 
 .about-sedona-title {
@@ -175,17 +234,37 @@ body {
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    max-width: 620px;
+}
+
+.about-title-welcome {
+    margin-bottom: 20px;
+}
+
+.about-title-search {
+    margin-bottom: 20px;
 }
 
 .about-sedona-description {
     font-size: 22px;
     line-height: 26px;
     font-weight: 400;
+    margin: 0 auto;
+    max-width: 651px;
+}
+
+.about-description-search {
+    margin-bottom: 54px;
 }
 
 .about-sedona-btn {
     font-size: 20px;
     line-height: 36px;
+    display: inline-block;
+    margin: 0;
+    padding: 8px 50px;
 }
 
 /*Преимущества index*/
@@ -195,18 +274,18 @@ body {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-}
-
-.advantages-item-dark-blue {
-    background-color: #82B3D3;
-    color: #ffffff;
-    text-align: center;
+    list-style-type: none;
 }
 
 .advantages-item {
     width: 400px;
+    min-height: 385px;
     padding: 0 85px;
     box-sizing: border-box;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .advantages-item-img {
@@ -215,6 +294,12 @@ body {
 
 .advantages-img {
     display: block;
+}
+
+.advantages-item-dark-blue {
+    background-color: #82B3D3;
+    color: #ffffff;
+    text-align: center;
 }
 
 .advantages-item-blue {
@@ -234,12 +319,20 @@ body {
     font-weight: 700;
     line-height: 28px;
     text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 30px;
 }
 
 .advantages-description {
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
+    margin: 0;
+    padding-top: 30px;
+}
+
+.advantages-description-secondary {
+    padding: 0;
 }
 
 /*Фильтр catalog*/
@@ -247,8 +340,9 @@ body {
 .filter {
     background-image: url(../images/catalog-filter-background.jpg);
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 110% auto;
     color: #ffffff;
+    padding: 35px 0 70px 0;
 }
 
 .filter-content {
@@ -264,6 +358,8 @@ body {
     font-size: 60px;
     line-height: 78px;
     font-weight: 700;
+    margin: 0;
+    margin-bottom: 8px;
 }
 
 .breadcrumbs {
@@ -271,6 +367,9 @@ body {
     line-height: 21px;
     margin: 0;
     padding: 0;
+    margin-bottom: 40px;
+    list-style-type: none;
+    display: flex;
 }
 
 .breadcrumbs-link {
@@ -282,16 +381,61 @@ body {
     display: flex;
 }
 
+.catalog-filter-group-container:first-child {
+    margin-right: 140px;
+}
+
+.catalog-filter-group {
+    margin: 0;
+    padding: 0;
+    min-width: 150px;
+    border: none;
+}
+
+.catalog-filter-group:not(:last-child) {
+    margin-right: 70px;
+}
+
+
+.catalog-filter-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.catalog-filter-item {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 16px;
+}
+
 .catalog-filter-title {
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 32px;
 }
 
 .catalog-filter-control {
     font-size: 18px;
     line-height: 23px;
     font-weight: 400;
+}
+
+.price-range-group {
+    margin: 0;
+    padding: 0;
+    margin-right: 70px;
+    border: none;
+}
+
+.range-input-group {
+    display: flex;
+    width: 288px;
+    height: 48px;
+    margin-bottom: 36px;
 }
 
 .range-input,
@@ -304,11 +448,47 @@ body {
 
 .range-input {
     background-color: #f2f2f2;
+    box-sizing: border-box;
+    width: 143px;
+    min-height: 48px;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 12px 20px;
 }
 
 .range-input-description {
     font-weight: 400;
 }
+
+.range-filter {
+    width: 288px;
+    margin: 0;
+    padding: 0;
+}
+
+.filter-button-group {
+    align-self: flex-end;
+}
+
+.filter-btn {
+    width: 191px;
+    padding: 8px 0;
+    border: none;
+    outline: none;
+}
+
+.filter-btn:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+
+/*Основной контейнер catalog*/
+.catalog-body {
+    width: 1060px;
+    margin: 50px auto 60px auto;
+}
+
 
 /*Сортировка catalog*/
 
@@ -316,8 +496,9 @@ body {
     color: #000000;
     display: flex;
     width: 1060px;
-    margin: 0 auto;
+    margin: 0;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .sort-title {
@@ -325,6 +506,7 @@ body {
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
+    margin: 0;
 }
 
 .sort-settings {
@@ -336,13 +518,45 @@ body {
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
+    width: 292px;
+    height: 49px;
+    padding: 14px 20px;
+    margin: 0;
+    margin-right: 70px;
+}
+
+.sort-grid-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 160px;
+    min-height: 48px;
+}
+
+.sort-grid-item:not(:nth-child(3n)) {
+    margin-right: 8px;
+}
+
+.sort-grid-btn {
+    display: block;
+    min-width: 48px;
+    min-height: 48px;
+    margin: 0;
 }
 
 /*Карточки catalog*/
 
 .hotels-catalog {
     width: 1060px;
-    margin: 0 auto;
+    margin: 0;
+}
+
+.hotels-catalog-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .hotels-catalog-item {
@@ -355,16 +569,30 @@ body {
     text-decoration: none;
 }
 
+.hotel-img {
+    display: block;
+    margin-bottom: 16px;
+}
+
 .hotel-name {
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
+    margin: 0;
+    margin-bottom: 16px;
 }
 
 .hotel-description {
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.hotel-description p {
+    margin: 0;
 }
 
 .hotel-description p:first-child {
@@ -375,6 +603,26 @@ body {
     text-align: right;
 }
 
+.hotel-button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.hotel-btn {
+    width: 140px;
+    padding: 8px 0;
+}
+
+.hotel-rating-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stars {
+    margin: 0;
+}
+
 .rating {
     font-size: 16px;
     font-weight: 400;
@@ -382,6 +630,9 @@ body {
     background-color: #f2f2f2;
     text-transform: uppercase;
     text-align: center;
+    width: 140px;
+    padding: 8px 0;
+    margin: 0;
 }
 
 /*Пагинация*/
@@ -392,6 +643,17 @@ body {
     margin: 0 auto;
 }
 
+.catalog-pagination-list {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.catalog-pagination-item:not(:last-child) {
+    margin-right: 8px;
+}
+
 .pagination-link {
     font-size: 20px;
     line-height: 36px;
@@ -399,6 +661,12 @@ body {
     text-align: center;
     color: #ffffff;
     background-color: #82B3D3;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60px;
+    min-height: 60px;
 }
 
 .pagination-link-active {
@@ -419,6 +687,7 @@ body {
     background-size: 100% auto;
     text-align: center;
     color: #ffffff;
+    padding: 96px 258px 104px 258px;
 }
 
 .subscribe-transparent {
@@ -432,12 +701,20 @@ body {
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 20px;
 }
 
 .subscribe-description {
     font-size: inherit;
     font-weight: inherit;
     line-height: inherit;
+    margin: 0;
+    margin-bottom: 54px;
+}
+
+.subscribe-form {
+    display: flex;
 }
 
 .subscribe-field {
@@ -445,11 +722,20 @@ body {
     line-height: 24px;
     font-weight: 400;
     background-color: #f2f2f2;
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding: 14px 20px;
 }
 
 .subscribe-btn {
     font-size: 20px;
     line-height: 36px;
+    padding: 8px 50px;
+    margin: 0;
+    display: inline-block;
+    outline: none;
+    border: none;
 }
 
 /*Основной футер*/
@@ -457,6 +743,7 @@ body {
 .main-footer {
     background-color: #ffffff;
     color: #000000;
+    padding: 40px 70px 30px 70px;
 }
 
 .main-footer-container {
@@ -464,14 +751,26 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.footer-social-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.social-link {
+    display: block;
+    min-width: 48px;
+    min-height: 40px;
 }
 
 .footer-social {
     width: 190px;
-}
-
-.footer-logo {
-    width: 115px;
 }
 
 .footer-phone {
@@ -480,9 +779,19 @@ body {
 }
 
 .footer-phone-link {
+    display: block;
     color: #000000;
     font-size: 40px;
     line-height: 40px;
     font-weight: 400;
     text-decoration: none;
+    margin: 0;
+}
+
+.footer-logo {
+    width: 115px;
+}
+
+.footer-logo-img {
+    display: block;
 }

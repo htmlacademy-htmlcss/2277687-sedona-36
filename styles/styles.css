@@ -557,11 +557,17 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+    gap: 20px;
 }
 
 .hotels-catalog-item {
     color: #000000;
     background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .hotel-link {
@@ -572,6 +578,7 @@ body {
 .hotel-img {
     display: block;
     margin-bottom: 16px;
+    object-fit: cover;
 }
 
 .hotel-name {
@@ -607,6 +614,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 16px;
+    margin-top: auto;
 }
 
 .hotel-btn {
@@ -646,8 +654,13 @@ body {
 .catalog-pagination-list {
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
+}
+
+.catalog-pagination-item {
+    margin-bottom: 8px;
 }
 
 .catalog-pagination-item:not(:last-child) {

@@ -54,6 +54,10 @@ body {
     height: 100%;
 }
 
+input {
+    font-family: 'PT Sans', sans-serif;
+}
+
 .page-container {
     background: #ffffff;
     margin: 0 auto;
@@ -82,6 +86,7 @@ body {
     display: block;
     border-radius: 4px;
     cursor: pointer;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .basic-btn {
@@ -469,6 +474,7 @@ body {
 
 .advantages-img {
     display: block;
+    height: 100%;
 }
 
 .advantages-item-dark-blue {
@@ -1197,6 +1203,7 @@ body {
     -ms-flex-positive: 1;
     flex-grow: 1;
     padding: 14px 20px;
+    border-radius: 4px 0 0 4px;
 }
 
 .subscribe-btn {

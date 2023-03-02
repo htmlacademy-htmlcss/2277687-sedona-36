@@ -1592,9 +1592,11 @@ select {
 
 .modal-button-search {
     grid-column: 1/-1;
-    padding: 20px;
-    margin-top: 49px;
+    padding: 18px;
+    margin-top: 48px;
     border-radius: 10px;
+    font-size: 20px;
+    line-height: 24px;
 }
 
 .modal-input-description {

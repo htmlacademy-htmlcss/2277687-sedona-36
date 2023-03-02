@@ -1485,14 +1485,14 @@ select {
     display: flex;
 }
 
-.modal-closed {
+/* .modal-closed {
     display: none;
-}
+} */
 
 .modal-dialog {
     box-sizing: border-box;
     width: 717px;
-    padding: 64px 70px;
+    padding: 64px 70px 64px 70px;
     background-color: #fff;
     border-radius: 30px;
     margin: auto;
@@ -1552,12 +1552,12 @@ select {
 
 .modal-form {
     display: grid;
-    grid-template-columns: 137px 110px 88px 137px 110px;
+    grid-template-columns: 137px 110px 84px 137px 110px;
 }
 
 .modal-input {
     background-image: url(../images/icon-calendar.svg);
-    background-position: 410px 16px;
+    background-position: 400px 18px;
     background-repeat: no-repeat;
     grid-column: 2/-1;
     box-sizing: border-box;
@@ -1566,6 +1566,7 @@ select {
     border-radius: 4px;
     background-color: #f2f2f2;
     padding: 12px 50px 12px 20px;
+    margin-bottom: 5px;
     font-size: 18px;
     font-weight: 700;
     line-height: 22px;
@@ -1591,8 +1592,8 @@ select {
 
 .modal-button-search {
     grid-column: 1/-1;
-    padding: 18px;
-    margin-top: 48px;
+    padding: 20px;
+    margin-top: 49px;
     border-radius: 10px;
 }
 
@@ -1742,6 +1743,7 @@ select {
 .input-description-icon {
     position: relative;
     padding-right: 32px;
+    padding-left: 4px;
 }
 
 .modal-tooltip-text:after {

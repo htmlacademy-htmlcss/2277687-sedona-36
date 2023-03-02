@@ -84,7 +84,7 @@
               <img class="advantages-img" width="800" height="384" alt="Мост дьявола" src="./images/devil-bridge.jpg">
             </li>
             <li class="advantages-item advantages-item-dark-blue">
-              <h3 class="advantages-title advantages-divider">Там есть мост дьявола</h3>
+              <h3 class="advantages-title advantages-divider">Там есть<br>мост дьявола</h3>
               <p class="advantages-description">
                 Да, по нему можно пройти! Если вы осмелитесь, разумеется
               </p>
@@ -97,24 +97,24 @@
         </section>
         <section class="advantages">
           <ul class="advantages-list">
-            <li class="advantages-item advantages-item-housing advantages-item-blue">
+            <li class="advantages-item advantages-item-housing advantages-item-light-blue">
               <h3 class="advantages-title">Жильё</h3>
               <p class="advantages-description advantages-description-secondary">
                 Рекомендуем пожить в настоящем мотеле,
                 всё как в кино!
               </p>
             </li>
-            <li class="advantages-item advantages-item-food advantages-item-light-blue">
+            <li class="advantages-item advantages-item-food">
               <h3 class="advantages-title">Еда</h3>
               <p class="advantages-description advantages-description-secondary">
-                Всегда заказывайте
+                Всегда заказывайте<br>
                 топовый фирменный бургер, вы не разочаруетесь!
               </p>
             </li>
-            <li class="advantages-item advantages-item-souvenirs advantages-item-blue">
+            <li class="advantages-item advantages-item-souvenirs advantages-item-light-blue">
               <h3 class="advantages-title">Сувениры</h3>
               <p class="advantages-description advantages-description-secondary">
-                Не только китайского,
+                Не только китайского,<br>
                 но и настоящего местного производства!
               </p>
             </li>
@@ -122,7 +122,8 @@
         </section>
         <section class="about-sedona about-sedona-search" data-test="search">
           <h2 class="about-sedona-title about-title-search">Заинтересовались?</h2>
-          <p class="about-sedona-description about-description-search">Укажите предполагаемые даты поездки,и мы
+          <p class="about-sedona-description about-description-search">Укажите предполагаемые даты поездки,<br>
+            и мы
             покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="btn basic-btn about-sedona-btn" href="./catalog.html">Поиск гостиницы в Седоне</a>
         </section>
@@ -193,6 +194,72 @@
           </section>
         </div>
       </footer>
+    </div>
+    <div class="modal modal-closed">
+      <div class="modal-dialog">
+        <header class="modal-header">
+          <h2 class="modal-title">Поиск гостиницы в седоне</h2>
+          <button class="modal-close">
+            <span class="visually-hidden">Закрыть</span>
+            <svg class="modal-close-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+              width="15" height="14" viewBox='0 0 15 14' fill="none">
+              <path fill="#000"
+                d="M14.4 1.3 13.1 0 7.4 5.7 1.68 0 .39 1.3 6.1 7 .4 12.7 1.68 14l5.7-5.7L13.1 14l1.3-1.3L8.68 7l5.7-5.7Z" />
+            </svg>
+          </button>
+        </header>
+        <section class="modal-content">
+          <form class="modal-form">
+            <label class="modal-input-description" for="in-date">Дата Заезда:</label>
+            <input class="modal-input" type="text" name="in-out-dates" id="in-date" placeholder="Укажите дату">
+            <p class="modal-input-info modal-input-error">Мы не можем отправить вас в прошлое.</p>
+            <label class="modal-input-description" for="out-date">Дата Выезда:</label>
+            <input class="modal-input" type="text" name="in-out-dates" id="out-date" placeholder="Укажите дату">
+            <p class="modal-input-info">На эти даты есть свободные номера. Пока есть.</p>
+            <label class="modal-input-description" for="adults">Взрослые:</label>
+            <div class="modal-counter">
+              <button class="modal-counter-btn modal-counter-btn-minus" type="button">
+                <svg class="modal-counter-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="2"
+                  aria-hidden="true" focusable="false" viewBox='0 0 15 2' fill="none">
+                  <path fill="#000" d="M.4 0v2h14V0H.4Z" />
+                </svg>
+              </button>
+              <input class="modal-counter-input" type="number" name="people" id="adults">
+              <button class="modal-counter-btn modal-counter-btn-plus" type="button">
+                <svg class="modal-counter-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                  aria-hidden="true" focusable="false" viewBox='0 0 14 14' fill="none">
+                  <path fill="#000" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                </svg>
+              </button>
+            </div>
+            <span class="modal-input-description input-description-children input-description-icon">
+              <label class="modal-input-description" for="children">Дети:</label>
+              <span class="modal-tooltip">
+                <button class="modal-tooltip-toggle" type="button" aria-labelledby="tooltip-label-children"></button>
+                <span class="modal-tooltip-text" role="tooltip" id="tooltip-label-children">
+                  Укажите количество детей, которые будут с вами, возраст которых от 6 до
+                  18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+            </span>
+            <div class="modal-counter">
+              <button class="modal-counter-btn modal-counter-btn-minus" type="button">
+                <svg class="modal-counter-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="2"
+                  aria-hidden="true" focusable="false" viewBox='0 0 15 2' fill="none">
+                  <path fill="#000" d="M.4 0v2h14V0H.4Z" />
+                </svg>
+              </button>
+              <input class="modal-counter-input" type="number" name="people" id="children">
+              <button class="modal-counter-btn modal-counter-btn-plus" type="button">
+                <svg class="modal-counter-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                  aria-hidden="true" focusable="false" viewBox='0 0 14 14' fill="none">
+                  <path fill="#000" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                </svg>
+              </button>
+            </div>
+            <button class="btn secondary-btn modal-button-search" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 

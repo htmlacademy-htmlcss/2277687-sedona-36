@@ -1132,8 +1132,7 @@ select {
 }
 
 .sort-grid-btn:focus {
-    border-color: #68a2ca;
-    outline: none;
+    outline: 2px #68a2ca solid;
 }
 
 .sort-grid-btn-active {

@@ -65,45 +65,51 @@
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="catalog-filter-control  filter-checkbox">
-                        <input type="checkbox" id="pool" name="infrastructure">
-                        Бассейн
+                        <input class="visually-hidden" type="checkbox" id="pool" name="infrastructure">
+                        <span class="control-mark-checkbox"></span>
+                        <span class="filter-control-label">Бассейн</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="catalog-filter-control filter-checkbox">
-                        <input type="checkbox" id="parking" name="infrastructure">
-                        Парковка
+                        <input class="visually-hidden" type="checkbox" id="parking" name="infrastructure">
+                        <span class="control-mark-checkbox"></span>
+                        <span class="filter-control-label">Парковка</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="catalog-filter-control  filter-checkbox">
-                        <input type="checkbox" id="wi-fi" name="infrastructure">
-                        Wi-fi
+                        <input class="visually-hidden" type="checkbox" id="wi-fi" name="infrastructure">
+                        <span class="control-mark-checkbox"></span>
+                        <span class="filter-control-label">Wi-Fi</span>
                       </label>
                     </li>
                   </ul>
                 </fieldset>
                 <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">
-                    Тип жилья:
+                    Тип Жилья:
                   </legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="catalog-filter-control filter-radio">
-                        <input type="radio" id="inn" name="housing-type">
-                        Гостинница
+                        <input class="visually-hidden" type="radio" id="inn" name="housing-type">
+                        <span class="control-mark-radio"></span>
+                        <span class="filter-control-label">Гостиница</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="catalog-filter-control filter-radio">
-                        <input type="radio" id="motel" name="housing-type">
-                        Мотель
+                        <input class="visually-hidden" type="radio" id="motel" name="housing-type">
+                        <span class="control-mark-radio"></span>
+                        <span class="filter-control-label">Мотель</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="catalog-filter-control filter-radio">
-                        <input type="radio" id="apartments" name="housing-type">
-                        Апартаменты
+                        <input class="visually-hidden" type="radio" id="apartments" name="housing-type">
+                        <span class="control-mark-radio"></span>
+                        <span class="filter-control-label">Апартаменты</span>
                       </label>
                     </li>
                   </ul>
@@ -124,7 +130,14 @@
                       <span class="range-input-description">до</span>
                     </div>
                   </div>
-                  <input class="range-filter" type="range" id="price" name="price">
+                  <div class="range-filter-container">
+                    <div class="range-filter-scale">
+                      <div class="range-filter-bar" style="left: 0; width: 226px">
+                        <button class="range-filter-toggle range-filter-toggle-min" type="button"></button>
+                        <button class="range-filter-toggle range-filter-toggle-max" type="button"></button>
+                      </div>
+                    </div>
+                  </div>
                 </fieldset>
                 <div class="filter-button-group">
                   <button class="btn secondary-btn filter-btn" type="submit">Применить</button>

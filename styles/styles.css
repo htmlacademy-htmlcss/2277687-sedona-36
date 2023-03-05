@@ -50,11 +50,6 @@ body {
     background-color: #f2f2f2;
 }
 
-input,
-select {
-    font-family: "PT Sans", sans-serif;
-}
-
 .page-container {
     display: -webkit-box;
     display: flex;
@@ -207,6 +202,7 @@ select {
     display: flex;
     -webkit-box-pack: justify;
     justify-content: space-between;
+    align-items: center;
     padding: 0 70px 0 238px;
 
     color: #000000;
@@ -380,6 +376,7 @@ select {
     padding-top: 51px;
     padding-bottom: 82px;
 
+    background-color: #e6e6e6;
     background-image: url(../images/index-promo-background.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -622,6 +619,7 @@ select {
     background-image: url(../images/catalog-filter-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #aaaaaa;
 }
 
 .filter-content {
@@ -885,6 +883,8 @@ select {
     padding: 12px 20px;
     padding-right: 48px;
 
+    font-family: "PT Sans", sans-serif;
+
     background-color: #f2f2f2;
     border: none;
     outline: none;
@@ -1040,6 +1040,7 @@ select {
     margin: 0;
     padding: 12px 50px 12px 20px;
 
+    font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
@@ -1394,7 +1395,7 @@ select {
     background-color: #ffffff;
 }
 
-/*Блок подписки на рассылку общий*/
+/*Блок подписки на рассылку*/
 
 .subscribe {
     padding: 96px 258px 104px 258px;
@@ -1402,6 +1403,7 @@ select {
     text-align: center;
     color: #ffffff;
 
+    background-color: #aaaaaa;
     background-image: url(../images/index-subscribe-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1444,6 +1446,7 @@ select {
     flex-grow: 1;
     padding: 14px 20px;
 
+    font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
@@ -1546,6 +1549,10 @@ select {
 
 .footer-logo {
     width: 115px;
+}
+
+.footer-logo-link {
+    display: block;
 }
 
 .footer-logo-link:hover .footer-logo-img path {
@@ -1795,6 +1802,7 @@ select {
 
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    -moz-appearance: textfield;
 }
 
 .modal-counter-input:focus {
@@ -1861,13 +1869,14 @@ select {
     position: absolute;
     z-index: 1;
 
-    width: 26px;
+
     height: 26px;
     margin-top: 0;
     margin-left: 5px;
 }
 
 .modal-tooltip-toggle {
+    vertical-align: bottom;
     width: 26px;
     height: 26px;
     margin-left: 6px;
@@ -1885,7 +1894,7 @@ select {
 .modal-tooltip-text {
     position: absolute;
     top: calc(100% + 13px);
-    left: calc(50% + 2px);
+    left: calc(50%);
 
     display: none;
     width: 255px;
@@ -1899,8 +1908,8 @@ select {
     background-color: #333333;
     border-radius: 10px;
 
-    -webkit-transform: translateX(calc(-50% + 5px));
-    transform: translateX(calc(-50% + 5px));
+    -webkit-transform: translateX(calc(-50% + 3px));
+    transform: translateX(calc(-50% + 3px));
 
     -webkit-box-sizing: border-box;
     box-sizing: border-box;

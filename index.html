@@ -13,7 +13,7 @@
       <header class="main-header" data-test="header">
         <nav class="navigation">
           <a class="navigation-logo" href="./index.html">
-            <img class="navigation-logo-img" width="140" height="70" alt="Логотип Седона"
+            <img class="navigation-logo-img" width="140" height="70" alt="Логотип Седона."
               src="./images/header-logo.svg">
           </a>
           <ul class="navigation-list">
@@ -44,7 +44,7 @@
         <section class="promo" data-test="hero">
           <h1 class="visually-hidden">Седона</h1>
           <img class="promo-logo" width="458" height="352" alt="Welcome to the gorgeous Sedona 'Because the Grand
-            Canyon sucks!'" src="./images/index-promo-logo.svg">
+            Canyon sucks!'." src="./images/index-promo-logo.svg">
         </section>
         <section class="about-sedona">
           <h2 class="about-sedona-title">Седона — небольшой городок в Аризоне,
@@ -60,7 +60,7 @@
               </p>
             </li>
             <li class="advantages-item-img">
-              <img class="advantages-img" width="800" height="384" alt="Кафе в Седоне" src="./images/sedona-cafe.jpg">
+              <img class="advantages-img" width="800" height="384" alt="Кафе в Седоне." src="./images/sedona-cafe.jpg">
             </li>
             <li class="advantages-item advantages-item-light-blue">
               <h3 class="advantages-title advantages-divider">Небольшая площадь</h3>
@@ -81,7 +81,7 @@
               </p>
             </li>
             <li class="advantages-item-img">
-              <img class="advantages-img" width="800" height="384" alt="Мост дьявола" src="./images/devil-bridge.jpg">
+              <img class="advantages-img" width="800" height="384" alt="Мост дьявола." src="./images/devil-bridge.jpg">
             </li>
             <li class="advantages-item advantages-item-dark-blue">
               <h3 class="advantages-title advantages-divider">Там есть<br>мост дьявола</h3>
@@ -212,10 +212,11 @@
           <h3 class="visually-hidden">Форма поиска отелей в Седоне</h3>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="modal-input-description" for="in-date">Дата Заезда:</label>
-            <input class="modal-input" type="text" name="in-out-dates" id="in-date" placeholder="Укажите дату">
+            <input class="modal-input" type="text" name="in-out-dates" id="in-date" placeholder="Укажите дату" required>
             <p class="modal-input-info modal-input-error">Мы не можем отправить вас в прошлое.</p>
             <label class="modal-input-description" for="out-date">Дата Выезда:</label>
-            <input class="modal-input" type="text" name="in-out-dates" id="out-date" placeholder="Укажите дату">
+            <input class="modal-input" type="text" name="in-out-dates" id="out-date" placeholder="Укажите дату"
+              required>
             <p class="modal-input-info">На эти даты есть свободные номера. Пока есть.</p>
             <label class="modal-input-description" for="adults">Взрослые:</label>
             <div class="modal-counter">
@@ -225,7 +226,7 @@
                   <path fill="#000" d="M.4 0v2h14V0H.4Z" />
                 </svg>
               </button>
-              <input class="modal-counter-input" type="number" name="people" id="adults">
+              <input class="modal-counter-input" type="number" name="people" id="adults" required>
               <button class="modal-counter-btn modal-counter-btn-plus" type="button">
                 <svg class="modal-counter-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                   aria-hidden="true" focusable="false" viewBox="0 0 14 14" fill="none">
@@ -249,7 +250,7 @@
                   <path fill="#000" d="M.4 0v2h14V0H.4Z" />
                 </svg>
               </button>
-              <input class="modal-counter-input" type="number" name="people" id="children">
+              <input class="modal-counter-input" type="number" name="people" id="children" required>
               <button class="modal-counter-btn modal-counter-btn-plus" type="button">
                 <svg class="modal-counter-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                   aria-hidden="true" focusable="false" viewBox="0 0 14 14" fill="none">

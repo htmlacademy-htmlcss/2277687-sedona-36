@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon" sizes="32x32">
+    <link rel="icon" type="image/png" href="./images/favicon.png" sizes="32x32">
   </head>
 
   <body>
@@ -162,7 +162,6 @@
                     <path fill="#83B3D3"
                       d="M16.8 1 .8 7c-1 .4-1 1-.2 1.3l4.1 1.3 9.5-6c.5-.3.9-.1.5.2l-7.6 7-.3 4.1c.4 0 .6-.2.8-.4l2-2 4.1 3.1c.8.5 1.3.3 1.5-.7L18 2.2c.3-1-.4-1.6-1.1-1.2Z" />
                   </svg>
-
                 </a>
               </li>
               <li class="footer-social-item">
@@ -173,7 +172,6 @@
                     <path fill="#83B3D3"
                       d="M19 .4H3.4C1.6.4.3 2 .3 3.8v10c0 2 1.3 3.6 3.2 3.6h15.7c1.6 0 3.1-1.6 3.1-3.4V3.8C22.1 2 20.8.4 19 .4ZM8 12.9v-8l7.3 4-7.3 4Z" />
                   </svg>
-
                 </a>
               </li>
             </ul>
@@ -195,6 +193,7 @@
         </div>
       </footer>
     </div>
+    <!-- Чтобы модальное окно отображалось, необходимо убрать класс modal-closed -->
     <div class="modal modal-closed">
       <div class="modal-dialog">
         <header class="modal-header">
@@ -203,7 +202,7 @@
             <span class="visually-hidden">Закрыть</span>
             <svg class="modal-close-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
               width="15" height="14" viewBox="0 0 15 14" fill="none">
-              <path fill="#000"
+              <path class="modal-close-fill" fill="#000"
                 d="M14.4 1.3 13.1 0 7.4 5.7 1.68 0 .39 1.3 6.1 7 .4 12.7 1.68 14l5.7-5.7L13.1 14l1.3-1.3L8.68 7l5.7-5.7Z" />
             </svg>
           </button>
@@ -223,14 +222,14 @@
               <button class="modal-counter-btn modal-counter-btn-minus" type="button">
                 <svg class="modal-counter-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="2"
                   aria-hidden="true" focusable="false" viewBox="0 0 15 2" fill="none">
-                  <path fill="#000" d="M.4 0v2h14V0H.4Z" />
+                  <path class="modal-counter-fill" fill="#000" d="M.4 0v2h14V0H.4Z" />
                 </svg>
               </button>
               <input class="modal-counter-input" type="number" name="people" id="adults" required>
               <button class="modal-counter-btn modal-counter-btn-plus" type="button">
                 <svg class="modal-counter-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                   aria-hidden="true" focusable="false" viewBox="0 0 14 14" fill="none">
-                  <path fill="#000" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                  <path class="modal-counter-fill" fill="#000" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
                 </svg>
               </button>
             </div>
@@ -247,14 +246,14 @@
               <button class="modal-counter-btn modal-counter-btn-minus" type="button">
                 <svg class="modal-counter-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="2"
                   aria-hidden="true" focusable="false" viewBox="0 0 15 2" fill="none">
-                  <path fill="#000" d="M.4 0v2h14V0H.4Z" />
+                  <path class="modal-counter-fill" fill="#000" d="M.4 0v2h14V0H.4Z" />
                 </svg>
               </button>
               <input class="modal-counter-input" type="number" name="people" id="children" required>
               <button class="modal-counter-btn modal-counter-btn-plus" type="button">
                 <svg class="modal-counter-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                   aria-hidden="true" focusable="false" viewBox="0 0 14 14" fill="none">
-                  <path fill="#000" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                  <path class="modal-counter-fill" fill="#000" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
                 </svg>
               </button>
             </div>

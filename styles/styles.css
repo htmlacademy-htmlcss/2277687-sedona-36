@@ -486,6 +486,7 @@ body {
     width: 400px;
     min-height: 385px;
     padding: 112px 84px;
+    padding-bottom: 112px;
 
     text-align: center;
 
@@ -537,6 +538,8 @@ body {
 }
 
 .advantages-item-dark-blue {
+    padding: 102px 84px;
+
     text-align: center;
     color: #ffffff;
 
